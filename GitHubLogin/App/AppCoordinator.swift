@@ -15,14 +15,6 @@ final class AppCoordinator {
     
     private(set) var window: UIWindow?
     
-    var rootViewController: UIViewController? {
-        window?.rootViewController
-    }
-    
-    var presentedViewController: UIViewController? {
-        rootViewController?.presentedViewController
-    }
-    
     // MARK: - init
     
     private init() { }
@@ -41,10 +33,6 @@ final class AppCoordinator {
         
         window?.rootViewController = controller
         window?.makeKeyAndVisible()
-    }
-    
-    func presentOnRoot(_ viewController: UIViewController) {
-        rootViewController?.present(viewController, animated: true, completion: nil)
     }
     
     func dismissKeyboardWhenTap() {
