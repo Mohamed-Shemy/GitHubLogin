@@ -26,6 +26,13 @@ extension GitHubAPI: TargetType, BaseAPIHeadersProtocol {
         }
     }
     
+    var sampleData: Data {
+        switch self {
+            case let .searchForUsers(parm):
+                return getSearchData(for: parm)
+        }
+    }
+    
     var task: Task {
         switch self {
             case let .searchForUsers(parms):
@@ -38,6 +45,20 @@ extension GitHubAPI: TargetType, BaseAPIHeadersProtocol {
                     parameters["sort"] = parms.sort.rawValue
                 }
                 return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        }
+    }
+}
+
+extension GitHubAPI {
+    
+    private func getSearchData(for parms: SearchParameters) -> Data {
+        let emptyData =
+        "{\"message\":\"No more results\",\"total_count\":0}".data(using: .utf8) ?? Data()
+        guard parms.key == "mohamed" else { return emptyData }
+        switch parms.page {
+            case 1, 2, 3:
+                return JSONLoader.getData(from: "mohamed_page_\(parms.page)") ?? emptyData
+            default: return Data()
         }
     }
 }

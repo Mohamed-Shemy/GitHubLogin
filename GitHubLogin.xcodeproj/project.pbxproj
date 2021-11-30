@@ -51,6 +51,15 @@
 		10B84BD8275613FF0030061D /* SearchParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BD7275613FF0030061D /* SearchParameters.swift */; };
 		10B84BDA275615750030061D /* Collection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BD9275615750030061D /* Collection + Extensions.swift */; };
 		10B84C08275672980030061D /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84C07275672980030061D /* JSONLoader.swift */; };
+		10B84C0E2756738D0030061D /* mohamed_page_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0B2756738D0030061D /* mohamed_page_3.json */; };
+		10B84C0F2756738D0030061D /* mohamed_page_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0C2756738D0030061D /* mohamed_page_1.json */; };
+		10B84C102756738D0030061D /* mohamed_page_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0D2756738D0030061D /* mohamed_page_2.json */; };
+		10B84C11275673990030061D /* mohamed_page_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0B2756738D0030061D /* mohamed_page_3.json */; };
+		10B84C12275673990030061D /* mohamed_page_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0C2756738D0030061D /* mohamed_page_1.json */; };
+		10B84C13275673990030061D /* mohamed_page_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0D2756738D0030061D /* mohamed_page_2.json */; };
+		10B84C142756739A0030061D /* mohamed_page_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0B2756738D0030061D /* mohamed_page_3.json */; };
+		10B84C152756739A0030061D /* mohamed_page_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0C2756738D0030061D /* mohamed_page_1.json */; };
+		10B84C162756739A0030061D /* mohamed_page_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 10B84C0D2756738D0030061D /* mohamed_page_2.json */; };
 		9034C4088D4A4363CA6A68D9 /* Pods_GitHubLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA39F063A820D3FDC004DF63 /* Pods_GitHubLogin.framework */; };
 		A57288814227FBCF0557A385 /* Pods_GitHubLogin_GitHubLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0DFCB9900339048BCAEAA5 /* Pods_GitHubLogin_GitHubLoginUITests.framework */; };
 		CF205ABB26493C5D7BFE8165 /* Pods_GitHubLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2D1B00A1BD52E51E254C9D /* Pods_GitHubLoginTests.framework */; };
@@ -110,6 +119,9 @@
 		10B84BD7275613FF0030061D /* SearchParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameters.swift; sourceTree = "<group>"; };
 		10B84BD9275615750030061D /* Collection + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection + Extensions.swift"; sourceTree = "<group>"; };
 		10B84C07275672980030061D /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		10B84C0B2756738D0030061D /* mohamed_page_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mohamed_page_3.json; sourceTree = "<group>"; };
+		10B84C0C2756738D0030061D /* mohamed_page_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mohamed_page_1.json; sourceTree = "<group>"; };
+		10B84C0D2756738D0030061D /* mohamed_page_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mohamed_page_2.json; sourceTree = "<group>"; };
 		44ABFDFD57FD063C0211A16E /* Pods-GitHubLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubLoginTests.release.xcconfig"; path = "Target Support Files/Pods-GitHubLoginTests/Pods-GitHubLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		7104CD49653BE4324FFB3364 /* Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-GitHubLogin-GitHubLoginUITests/Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F0DFCB9900339048BCAEAA5 /* Pods_GitHubLogin_GitHubLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubLogin_GitHubLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -388,6 +400,7 @@
 		10B84C05275672870030061D /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				10B84C0A275673790030061D /* JSON Data */,
 				10B84C062756728C0030061D /* JSONLoader */,
 			);
 			path = Local;
@@ -399,6 +412,16 @@
 				10B84C07275672980030061D /* JSONLoader.swift */,
 			);
 			path = JSONLoader;
+			sourceTree = "<group>";
+		};
+		10B84C0A275673790030061D /* JSON Data */ = {
+			isa = PBXGroup;
+			children = (
+				10B84C0C2756738D0030061D /* mohamed_page_1.json */,
+				10B84C0D2756738D0030061D /* mohamed_page_2.json */,
+				10B84C0B2756738D0030061D /* mohamed_page_3.json */,
+			);
+			path = "JSON Data";
 			sourceTree = "<group>";
 		};
 		73BE73EB7BA56988943588AF /* Frameworks */ = {
@@ -535,7 +558,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B84B892755E3C40030061D /* Colors.xcassets in Resources */,
+				10B84C0F2756738D0030061D /* mohamed_page_1.json in Resources */,
 				10B84B5B2755DF070030061D /* LaunchScreen.storyboard in Resources */,
+				10B84C102756738D0030061D /* mohamed_page_2.json in Resources */,
+				10B84C0E2756738D0030061D /* mohamed_page_3.json in Resources */,
 				10B84BC22755F1060030061D /* SearchViewController.xib in Resources */,
 				10B84B582755DF070030061D /* Assets.xcassets in Resources */,
 				10B84BC72755F13E0030061D /* UserTableViewCell.xib in Resources */,
@@ -546,6 +572,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B84C12275673990030061D /* mohamed_page_1.json in Resources */,
+				10B84C11275673990030061D /* mohamed_page_3.json in Resources */,
+				10B84C13275673990030061D /* mohamed_page_2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +582,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B84C152756739A0030061D /* mohamed_page_1.json in Resources */,
+				10B84C142756739A0030061D /* mohamed_page_3.json in Resources */,
+				10B84C162756739A0030061D /* mohamed_page_2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
