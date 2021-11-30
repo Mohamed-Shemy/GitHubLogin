@@ -27,10 +27,10 @@ final class GitHubSearchViewModel {
     var order: SortOrder = .asc
     
     private var lastSearchKey = ""
-    private let usersPerPage = 9
-    private var currentPage = 1
-    private var totalResults = 0
-    private var remainingResults: Int {
+    let usersPerPage = 9
+    var currentPage = 1
+    var totalResults = 0
+    var remainingResults: Int {
         totalResults - (usersPerPage * currentPage)
     }
     
