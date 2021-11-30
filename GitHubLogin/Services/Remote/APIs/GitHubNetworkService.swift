@@ -9,7 +9,7 @@ import RxSwift
 
 class GitHubNetworkService: MoyaServiceHelper<GitHubAPI>, GitHubNetworkingServiceProtocol {
     
-    func search(forUsers key: String, perPage: Int, page: Int) -> Single<SearchResponse> {
-        request(target: .searchForUsers(key, perPage, page))
+    func search(with parameters: SearchParameters) -> Single<SearchResponse> {
+        request(target: .searchForUsers(parameters))
     }
 }

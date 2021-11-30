@@ -83,9 +83,16 @@ class SearchViewController: UIViewController {
                 }
             }).disposed(by: viewModel.disposeBag)
         
-        
+        /*
+         * GitHub search does not provide a sort alphabetically option.
+         * Sorting results will cause a bad behavior with pagination,
+           after getting a new page some rows will raise-up.
+         */
         viewModel.users
-            .map({ $0.compactMap(\.uiModel) }) // map user to ui user
+            .map({
+                $0.compactMap(\.uiModel)    // map user to ui user
+                    .sorted(by: \.login, <) // sort result by login
+            })
             .bind(to: userTableView.rx // bind data into tableview
                     .items(cellIdentifier: UserTableViewCell.identifier,
                            cellType: UserTableViewCell.self)) { (indexPath, user, cell) in

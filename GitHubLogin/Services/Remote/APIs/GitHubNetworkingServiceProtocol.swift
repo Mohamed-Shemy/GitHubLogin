@@ -9,5 +9,5 @@ import RxSwift
 
 protocol GitHubNetworkingServiceProtocol: AnyObject {
     
-    func search(forUsers key: String, perPage: Int, page: Int) -> Single<SearchResponse>
+    func search(with parameters: SearchParameters) -> Single<SearchResponse>
 }

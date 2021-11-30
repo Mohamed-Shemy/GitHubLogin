@@ -23,6 +23,9 @@ final class GitHubSearchViewModel {
     let searchText = BehaviorRelay<String>(value: "")
     let submitButtonTapped = PublishSubject<Void>()
     
+    var sort: SortOption = .default
+    var order: SortOrder = .asc
+    
     private var lastSearchKey = ""
     private let usersPerPage = 9
     private var currentPage = 1
@@ -76,12 +79,19 @@ final class GitHubSearchViewModel {
         search(for: searchText.value)
     }
     
+    private func getSearchParameters(with key: String) -> SearchParameters {
+        SearchParameters(key: key,
+                         perPage: usersPerPage, page: currentPage,
+                         sort: sort, order: order)
+    }
+    
     // appendResult:
     //   - if this a new search -> replace old result
     //   - if getting new page -> append result
     private func performSearch(for key: String, appendResult: Bool = false) {
         isLoading.accept(true)
-        githubService.search(forUsers: key, perPage: usersPerPage, page: currentPage)
+        let parameters = getSearchParameters(with: key)
+        githubService.search(with: parameters)
             .subscribe { [weak self] response in
                 guard let self = self else { return }
                 self.isLoading.accept(false)

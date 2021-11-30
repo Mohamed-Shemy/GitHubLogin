@@ -9,7 +9,7 @@ import Moya
 
 enum GitHubAPI {
     
-    case searchForUsers(_ key: String, _ perPage: Int, _ page: Int)
+    case searchForUsers(SearchParameters)
 }
 
 extension GitHubAPI: TargetType, BaseAPIHeadersProtocol {
@@ -28,11 +28,15 @@ extension GitHubAPI: TargetType, BaseAPIHeadersProtocol {
     
     var task: Task {
         switch self {
-            case let .searchForUsers(key, perPage, page):
-                let parameters: [String: Any] = [
-                    "q": "\(key) in:login",
-                    "per_page": perPage,
-                    "page": page]
+            case let .searchForUsers(parms):
+                var parameters: [String: Any] = [
+                    "q": "\(parms.key) in:login",
+                    "per_page": parms.perPage,
+                    "page": parms.page,
+                    "order": parms.order.rawValue]
+                if parms.sort != .default {
+                    parameters["sort"] = parms.sort.rawValue
+                }
                 return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         }
     }
