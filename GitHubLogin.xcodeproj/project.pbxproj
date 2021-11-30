@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		10B84B4F2755DF050030061D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84B4E2755DF050030061D /* AppDelegate.swift */; };
-		10B84B532755DF050030061D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84B522755DF050030061D /* ViewController.swift */; };
-		10B84B562755DF050030061D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B84B542755DF050030061D /* Main.storyboard */; };
 		10B84B582755DF070030061D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B84B572755DF070030061D /* Assets.xcassets */; };
 		10B84B5B2755DF070030061D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B84B592755DF070030061D /* LaunchScreen.storyboard */; };
 		10B84B662755DF070030061D /* GitHubLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84B652755DF070030061D /* GitHubLoginTests.swift */; };
@@ -37,8 +35,6 @@
 /* Begin PBXFileReference section */
 		10B84B4B2755DF050030061D /* GitHubLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B84B4E2755DF050030061D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10B84B522755DF050030061D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		10B84B552755DF050030061D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10B84B572755DF070030061D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10B84B5A2755DF070030061D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10B84B5C2755DF070030061D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +93,13 @@
 		10B84B4D2755DF050030061D /* GitHubLogin */ = {
 			isa = PBXGroup;
 			children = (
-				10B84B4E2755DF050030061D /* AppDelegate.swift */,
-				10B84B522755DF050030061D /* ViewController.swift */,
-				10B84B542755DF050030061D /* Main.storyboard */,
-				10B84B572755DF070030061D /* Assets.xcassets */,
-				10B84B592755DF070030061D /* LaunchScreen.storyboard */,
-				10B84B5C2755DF070030061D /* Info.plist */,
+				10B84B7E2755DFE50030061D /* App */,
+				10B84B7F2755DFEB0030061D /* Configurations */,
+				10B84B802755DFF70030061D /* Resources */,
+				10B84B812755E0040030061D /* Services */,
+				10B84B822755E00B0030061D /* Core */,
+				10B84B832755E0110030061D /* Modules */,
+				10B84B842755E0250030061D /* Launch Screen */,
 			);
 			path = GitHubLogin;
 			sourceTree = "<group>";
@@ -122,6 +119,83 @@
 				10B84B712755DF070030061D /* GitHubLoginUITestsLaunchTests.swift */,
 			);
 			path = GitHubLoginUITests;
+			sourceTree = "<group>";
+		};
+		10B84B7E2755DFE50030061D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				10B84B4E2755DF050030061D /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		10B84B7F2755DFEB0030061D /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				10B84B5C2755DF070030061D /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		10B84B802755DFF70030061D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10B84B572755DF070030061D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10B84B812755E0040030061D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				10B84B852755E0620030061D /* Remote */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		10B84B822755E00B0030061D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		10B84B832755E0110030061D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		10B84B842755E0250030061D /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				10B84B592755DF070030061D /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		10B84B852755E0620030061D /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				10B84B872755E06C0030061D /* APIs */,
+				10B84B862755E0670030061D /* Base */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		10B84B862755E0670030061D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		10B84B872755E06C0030061D /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +304,6 @@
 			files = (
 				10B84B5B2755DF070030061D /* LaunchScreen.storyboard in Resources */,
 				10B84B582755DF070030061D /* Assets.xcassets in Resources */,
-				10B84B562755DF050030061D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +328,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B84B532755DF050030061D /* ViewController.swift in Sources */,
 				10B84B4F2755DF050030061D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		10B84B542755DF050030061D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10B84B552755DF050030061D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		10B84B592755DF070030061D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,7 +501,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubLogin/Info.plist;
+				INFOPLIST_FILE = GitHubLogin/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57CN6FH4FY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubLogin/Info.plist;
+				INFOPLIST_FILE = GitHubLogin/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
