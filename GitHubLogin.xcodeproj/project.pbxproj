@@ -22,6 +22,18 @@
 		10B84B9B2755E4C80030061D /* BaseAPIHeadersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84B992755E4C80030061D /* BaseAPIHeadersProtocol.swift */; };
 		10B84B9F2755E5000030061D /* Data + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84B9E2755E5000030061D /* Data + Extensions.swift */; };
 		10B84BA02755E5000030061D /* Data + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84B9E2755E5000030061D /* Data + Extensions.swift */; };
+		10B84BA22755E6C60030061D /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BA12755E6C60030061D /* GitHubAPI.swift */; };
+		10B84BA32755E6C60030061D /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BA12755E6C60030061D /* GitHubAPI.swift */; };
+		10B84BA52755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BA42755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift */; };
+		10B84BA62755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BA42755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift */; };
+		10B84BA82755E6EC0030061D /* GitHubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BA72755E6EC0030061D /* GitHubNetworkService.swift */; };
+		10B84BA92755E6EC0030061D /* GitHubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BA72755E6EC0030061D /* GitHubNetworkService.swift */; };
+		10B84BAD2755E72B0030061D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BAC2755E72B0030061D /* SearchResponse.swift */; };
+		10B84BAE2755E72B0030061D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BAC2755E72B0030061D /* SearchResponse.swift */; };
+		10B84BB02755E73E0030061D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BAF2755E73E0030061D /* User.swift */; };
+		10B84BB12755E73E0030061D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BAF2755E73E0030061D /* User.swift */; };
+		10B84BB32755E74E0030061D /* UserUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BB22755E74E0030061D /* UserUIModel.swift */; };
+		10B84BB42755E74E0030061D /* UserUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BB22755E74E0030061D /* UserUIModel.swift */; };
 		9034C4088D4A4363CA6A68D9 /* Pods_GitHubLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA39F063A820D3FDC004DF63 /* Pods_GitHubLogin.framework */; };
 		A57288814227FBCF0557A385 /* Pods_GitHubLogin_GitHubLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0DFCB9900339048BCAEAA5 /* Pods_GitHubLogin_GitHubLoginUITests.framework */; };
 		CF205ABB26493C5D7BFE8165 /* Pods_GitHubLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2D1B00A1BD52E51E254C9D /* Pods_GitHubLoginTests.framework */; };
@@ -60,6 +72,12 @@
 		10B84B962755E49F0030061D /* MoyaServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaServiceHelper.swift; sourceTree = "<group>"; };
 		10B84B992755E4C80030061D /* BaseAPIHeadersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIHeadersProtocol.swift; sourceTree = "<group>"; };
 		10B84B9E2755E5000030061D /* Data + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data + Extensions.swift"; sourceTree = "<group>"; };
+		10B84BA12755E6C60030061D /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		10B84BA42755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNetworkingServiceProtocol.swift; sourceTree = "<group>"; };
+		10B84BA72755E6EC0030061D /* GitHubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNetworkService.swift; sourceTree = "<group>"; };
+		10B84BAC2755E72B0030061D /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		10B84BAF2755E73E0030061D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		10B84BB22755E74E0030061D /* UserUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUIModel.swift; sourceTree = "<group>"; };
 		44ABFDFD57FD063C0211A16E /* Pods-GitHubLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubLoginTests.release.xcconfig"; path = "Target Support Files/Pods-GitHubLoginTests/Pods-GitHubLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		7104CD49653BE4324FFB3364 /* Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-GitHubLogin-GitHubLoginUITests/Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F0DFCB9900339048BCAEAA5 /* Pods_GitHubLogin_GitHubLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubLogin_GitHubLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +214,7 @@
 		10B84B832755E0110030061D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				10B84BAA2755E7120030061D /* Search */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -230,6 +249,9 @@
 		10B84B872755E06C0030061D /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				10B84BA12755E6C60030061D /* GitHubAPI.swift */,
+				10B84BA42755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift */,
+				10B84BA72755E6EC0030061D /* GitHubNetworkService.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -248,6 +270,24 @@
 				10B84B9E2755E5000030061D /* Data + Extensions.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		10B84BAA2755E7120030061D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				10B84BAB2755E7170030061D /* Models */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		10B84BAB2755E7170030061D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10B84BAC2755E72B0030061D /* SearchResponse.swift */,
+				10B84BAF2755E73E0030061D /* User.swift */,
+				10B84BB22755E74E0030061D /* UserUIModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		73BE73EB7BA56988943588AF /* Frameworks */ = {
@@ -531,10 +571,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B84B942755E4860030061D /* NetworkServiceType.swift in Sources */,
+				10B84BA52755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift in Sources */,
+				10B84BA22755E6C60030061D /* GitHubAPI.swift in Sources */,
+				10B84BA82755E6EC0030061D /* GitHubNetworkService.swift in Sources */,
 				10B84B4F2755DF050030061D /* AppDelegate.swift in Sources */,
 				10B84B9A2755E4C80030061D /* BaseAPIHeadersProtocol.swift in Sources */,
+				10B84BB32755E74E0030061D /* UserUIModel.swift in Sources */,
 				10B84B9F2755E5000030061D /* Data + Extensions.swift in Sources */,
 				10B84B972755E49F0030061D /* MoyaServiceHelper.swift in Sources */,
+				10B84BB02755E73E0030061D /* User.swift in Sources */,
+				10B84BAD2755E72B0030061D /* SearchResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,10 +589,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B84B952755E4860030061D /* NetworkServiceType.swift in Sources */,
+				10B84BA62755E6DA0030061D /* GitHubNetworkingServiceProtocol.swift in Sources */,
+				10B84BA32755E6C60030061D /* GitHubAPI.swift in Sources */,
+				10B84BA92755E6EC0030061D /* GitHubNetworkService.swift in Sources */,
 				10B84B662755DF070030061D /* GitHubLoginTests.swift in Sources */,
 				10B84B9B2755E4C80030061D /* BaseAPIHeadersProtocol.swift in Sources */,
+				10B84BB42755E74E0030061D /* UserUIModel.swift in Sources */,
 				10B84BA02755E5000030061D /* Data + Extensions.swift in Sources */,
 				10B84B982755E49F0030061D /* MoyaServiceHelper.swift in Sources */,
+				10B84BB12755E73E0030061D /* User.swift in Sources */,
+				10B84BAE2755E72B0030061D /* SearchResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
