@@ -50,6 +50,7 @@
 		10B84BD6275613290030061D /* SortOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BD5275613290030061D /* SortOption.swift */; };
 		10B84BD8275613FF0030061D /* SearchParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BD7275613FF0030061D /* SearchParameters.swift */; };
 		10B84BDA275615750030061D /* Collection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84BD9275615750030061D /* Collection + Extensions.swift */; };
+		10B84C08275672980030061D /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B84C07275672980030061D /* JSONLoader.swift */; };
 		9034C4088D4A4363CA6A68D9 /* Pods_GitHubLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA39F063A820D3FDC004DF63 /* Pods_GitHubLogin.framework */; };
 		A57288814227FBCF0557A385 /* Pods_GitHubLogin_GitHubLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0DFCB9900339048BCAEAA5 /* Pods_GitHubLogin_GitHubLoginUITests.framework */; };
 		CF205ABB26493C5D7BFE8165 /* Pods_GitHubLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2D1B00A1BD52E51E254C9D /* Pods_GitHubLoginTests.framework */; };
@@ -108,6 +109,7 @@
 		10B84BD5275613290030061D /* SortOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOption.swift; sourceTree = "<group>"; };
 		10B84BD7275613FF0030061D /* SearchParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameters.swift; sourceTree = "<group>"; };
 		10B84BD9275615750030061D /* Collection + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection + Extensions.swift"; sourceTree = "<group>"; };
+		10B84C07275672980030061D /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		44ABFDFD57FD063C0211A16E /* Pods-GitHubLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubLoginTests.release.xcconfig"; path = "Target Support Files/Pods-GitHubLoginTests/Pods-GitHubLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		7104CD49653BE4324FFB3364 /* Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-GitHubLogin-GitHubLoginUITests/Pods-GitHubLogin-GitHubLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F0DFCB9900339048BCAEAA5 /* Pods_GitHubLogin_GitHubLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubLogin_GitHubLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +231,7 @@
 		10B84B812755E0040030061D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				10B84C05275672870030061D /* Local */,
 				10B84B852755E0620030061D /* Remote */,
 			);
 			path = Services;
@@ -380,6 +383,22 @@
 				10B84BCD2755F2730030061D /* UITableView + Extensions.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		10B84C05275672870030061D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				10B84C062756728C0030061D /* JSONLoader */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		10B84C062756728C0030061D /* JSONLoader */ = {
+			isa = PBXGroup;
+			children = (
+				10B84C07275672980030061D /* JSONLoader.swift */,
+			);
+			path = JSONLoader;
 			sourceTree = "<group>";
 		};
 		73BE73EB7BA56988943588AF /* Frameworks */ = {
@@ -684,6 +703,7 @@
 				10B84B9F2755E5000030061D /* Data + Extensions.swift in Sources */,
 				10B84B972755E49F0030061D /* MoyaServiceHelper.swift in Sources */,
 				10B84BD227560AB70030061D /* AppCoordinator.swift in Sources */,
+				10B84C08275672980030061D /* JSONLoader.swift in Sources */,
 				10B84BB02755E73E0030061D /* User.swift in Sources */,
 				10B84BAD2755E72B0030061D /* SearchResponse.swift in Sources */,
 				10B84BCE2755F2730030061D /* UITableView + Extensions.swift in Sources */,
