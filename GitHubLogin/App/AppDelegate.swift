@@ -33,8 +33,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func displayFirstScreen() {
-        let searchController = SearchViewController()
-        coordinator.setRoot(searchController, withNavigation: true)
+        let viewModel = getGitHubSearchViewModel()
+        let searchController = SearchViewController(viewModel: viewModel)
+        AppCoordinator.shared.setRoot(searchController, withNavigation: true)
+    }
+    
+    private func getGitHubSearchViewModel() -> GitHubSearchViewModel {
+        if CommandLine.arguments.contains("--uitesting") {
+            let service = GitHubNetworkService(type: .test)
+            return GitHubSearchViewModel(githubService: service)
+        }
+        return GitHubSearchViewModel()
     }
 }
 

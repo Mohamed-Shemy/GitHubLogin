@@ -12,6 +12,6 @@ struct SearchParameters {
     var key: String
     var perPage: Int
     var page: Int
-    var sort: SortOption = .default
-    var order: SortOrder = .asc
+    var sort: SortOption
+    var order: SortOrder
 }
