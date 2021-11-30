@@ -19,7 +19,18 @@ class SearchViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let viewModel = GitHubSearchViewModel()
+    private let viewModel: GitHubSearchViewModel
+    
+    // MARK: - init
+    
+    init(viewModel: GitHubSearchViewModel = GitHubSearchViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("use init(viewModel: <#T##GitHubSearchViewModel#>)")
+    }
     
     // MARK: - LifeCycle
     
